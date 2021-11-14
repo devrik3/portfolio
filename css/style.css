@@ -117,7 +117,7 @@ footer::after{
 	background: #20222F;
 	width: 100%;
 }
-@media (max-width: 720px){
+@media (max-width: 920px){
 	body{overflow-x: hidden; margin: 0;}
 	.containerBody .sobreMim{
 		display: flex;
@@ -126,6 +126,7 @@ footer::after{
 		max-width: 75%;
 		text-align: center;
 		margin: 0 auto;
+		justify-content: center;
 	}
 	.containerBody .sobreMim h2{
 		font-size: 20pt;
@@ -192,6 +193,38 @@ footer::after{
 		margin: 5% 0 0;
 		text-align: center;
 		cursor: pointer;
+	}
+	footer{
+		width: 100%;
+		background: #262939;
+		position: absolute;
+		height: 15vh;
+		bottom: -15%;
+	}
+	.containerFooter{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 1% 0 0;
+	}
+	.containerFooter h2{
+		font-weight: 400;
+		color: #E5E6E8;
+		font-size: 18pt;
+		margin: 0 0 1%;
+	}
+	.containerFooter li, li a{
+		font-weight: 400;
+		color: #AFB1B2;
+		font-size: 12pt;
+		margin: 0 0 1%;
+		text-decoration: none;
+	}
+	.containerFooter li a:hover{text-decoration: underline;}
+	::marker{color: #20222F;}
+	footer::after{
+		background: #20222F;
+		width: 100%;
 	}
 }
 body::-webkit-scrollbar{
