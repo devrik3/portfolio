@@ -126,7 +126,6 @@ footer::after{
 		max-width: 75%;
 		text-align: center;
 		margin: 0 auto;
-		visibility: hidden;
 	}
 	.containerBody .sobreMim h2{
 		font-size: 20pt;
