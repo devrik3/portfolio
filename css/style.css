@@ -1,5 +1,6 @@
 *{
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	user-select: none;
 	user-select: none;
@@ -9,29 +10,31 @@
 	-ms-user-select: none;
 	font-family: 'Open Sans', sans-serif;
 }
-body{margin: 5%; overflow-x: hidden; background: #2A2D3F;}
+body{background: #2A2D3F;}
 .containerBody .sobreMim{
 	display: flex;
 	color: #FFF;
 	flex-direction: column;
 	max-width: 50%;
 	text-align: center;
-	margin: 0 auto;
+	margin: 1% auto;
 }
 .containerBody .sobreMim h2{
 	font-size: 20pt;
 	color: #E5E6E8;
+	margin: 0 0 1.5%;
 }
 .containerBody .sobreMim p{
 	font-size: 11pt;
 	color: #AFB1B2;
 	font-weight: 200;
+	margin: 0 0 3.5%;
 }
 .containerBody .sobreMim a img{
 	width: 125px;
 	height: 125px;
 	border-radius: 50%;
-	filter: drop-shadow(2px 3px 5px rgba(0,0,0, .50));
+	filter: drop-shadow(2px 3px 5px rgba(0,0,0, .35));
 }
 .containerBody .containerProjetos h2{
 	text-align: center;
@@ -45,6 +48,7 @@ body{margin: 5%; overflow-x: hidden; background: #2A2D3F;}
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+	margin: 0 0 1.5%;
 }
 .containerBody .containerProjetos .brWallet{
 	display: flex;
@@ -81,14 +85,48 @@ body{margin: 5%; overflow-x: hidden; background: #2A2D3F;}
 	text-align: center;
 	cursor: pointer;
 }
-@media (max-width: 1000px){
+footer{
+	width: 100%;
+	background: #262939;
+	position: absolute;
+	height: 15vh;
+	bottom: 0;
+}
+.containerFooter{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 1% 0 0;
+}
+.containerFooter h2{
+	font-weight: 400;
+	color: #E5E6E8;
+	font-size: 18pt;
+	margin: 0 0 1%;
+}
+.containerFooter li, li a{
+	font-weight: 400;
+	color: #AFB1B2;
+	font-size: 12pt;
+	margin: 0 0 1%;
+	text-decoration: none;
+}
+.containerFooter li a:hover{text-decoration: underline;}
+::marker{color: #20222F;}
+footer::after{
+	background: #20222F;
+	width: 100%;
+}
+@media (max-width: 720px){
+	body{overflow-x: hidden; margin: 0;}
 	.containerBody .sobreMim{
 		display: flex;
 		color: #FFF;
 		flex-direction: column;
-		max-width: 50%;
+		max-width: 75%;
 		text-align: center;
 		margin: 0 auto;
+		visibility: hidden;
 	}
 	.containerBody .sobreMim h2{
 		font-size: 20pt;
@@ -114,9 +152,9 @@ body{margin: 5%; overflow-x: hidden; background: #2A2D3F;}
 		width: 300px;
 	}
 	.containerBody .containerProjetos .apresentacao{
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
+		display: grid;
+		justify-content: space-around
+		/*align-items: flex-end;*/
 	}
 	.containerBody .containerProjetos .brWallet{
 		display: flex;
@@ -136,11 +174,10 @@ body{margin: 5%; overflow-x: hidden; background: #2A2D3F;}
 		font-size: 11pt;
 	}
 	.containerBody .containerProjetos .nuBanco{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		margin: 0 auto;
-		margin-left: 1.5%;
+		margin: 5% 0 0 0;
+		display: grid;
+		/*margin: 0 auto;*/
+		/*margin-left: 1.5%;*/
 	}
 	.containerBody .containerProjetos .nuBanco button{
 		width: 300px;
@@ -151,6 +188,11 @@ body{margin: 5%; overflow-x: hidden; background: #2A2D3F;}
 		border: 1.5px solid #333;
 		color: #E5E6E8;
 		font-size: 11pt;
+	}
+	.embbed{
+		margin: 5% 0 0;
+		text-align: center;
+		cursor: pointer;
 	}
 }
 body::-webkit-scrollbar{
