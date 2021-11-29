@@ -194,7 +194,7 @@ footer::after{
 	background: #20222F;
 	width: 100%;
 }
-@media (max-width: 920px){
+@media screen and (max-width: 920px){
 	body{overflow-x: hidden; margin: 0;}
 	header .mobileNav .hamburguer p{
 		display: flex;
@@ -305,6 +305,15 @@ footer::after{
 	footer::after{
 		background: #20222F;
 		width: 100%;
+	}
+}
+@media screen and (min-height: 1px){
+	footer{
+			width: 100%;
+			background: #262939;
+			position: absolute;
+			height: 25vh;
+			bottom: -125%!important;
 	}
 }
 body::-webkit-scrollbar{
