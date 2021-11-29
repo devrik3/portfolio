@@ -9,9 +9,32 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		
+<div id="loading" class="loading">
+	<p class="loadI"></p>
+	<p class="loadII"></p>
+</div>
+	<header id="header">
+		<h2><a href="index.html">Portfólio</a></h2>
+		<div class="mobileNav">
+			<div class="hamburguer" id="navHamburguer">
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
 	</header>
+		<div id="navigationContainer" class="containerNav">
+			<nav id="navItens" class="boxNav">
+				<ul class="ItensNavigation">
+					<li>Home</li>
+					<li>Certificados</li>
+					<li>Serviços</li>
+					<li>Mais Projetos</li>
+					<li>Currículo</li>
+					<li>Sobre</li>
+				</ul>
+			</nav>
+		</div>
 	<div class="containerBody">
 		<div class="sobreMim">
 			<a href=""><img src="assets/avatarLogo.jpg"></a>
@@ -33,9 +56,18 @@
 			</div>
 		</div>
 	</div>
-	<p class="embbed" onclick="github()"><img src="https://img.shields.io/static/v1?label=GitHub&message=@dev.rik3&color=<COLOR>&style=<STYLE>&logo=<LOGO>">
-	</p>
 
+	<div class="containerServicos">
+		<h2>Tecnologias</h2>
+
+		<div class="servicos">
+			<i class="fab fa-html5 tech html5"></i>
+			<i class="fab fa-css3-alt tech css3"></i>
+			<i class="fab fa-js-square tech js"></i>
+		</div>
+
+	</div>
+	
 	<footer>
 		<div class="containerFooter">
 			<div class="linksUteis">
@@ -67,5 +99,10 @@
 		</div>
 	</footer>
 <script src="js/redirect.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js
+"></script>
+
+<script src="js/jquery.js"></script>
 </body>
 </html>
