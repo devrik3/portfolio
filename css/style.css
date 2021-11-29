@@ -11,6 +11,66 @@
 	font-family: 'Open Sans', sans-serif;
 }
 body{background: #2A2D3F;}
+header{
+	width: 100%;
+	height: 6.5vh;
+	background: #262939;
+	box-shadow: 2px 2px 8px rgba(0,0,0, .35);
+	display: flex;
+	justify-content: space-between;
+	color: #E5E6E8;
+	z-index: 100;
+}
+header h2, header a{
+	text-decoration: none;
+	margin: 1.9vh 1.9vh 0;
+	list-style: none;
+	font-size: 14pt;
+	color: #E5E6E8;
+	font-family: 'Open Sans', sans-serif;
+}
+header .mobileNav .hamburguer{
+	position: absolute;
+	top: 1.5vh;
+	right: 2.5vh;
+	cursor: pointer;
+}
+header .mobileNav .hamburguer p{
+	width: 35px;
+  	height: 5px;
+  	background: #E5E6E8;
+  	margin: 6px 0;
+  	cursor: pointer;
+  	display: flex;
+}
+.boxNav nav ul li{list-style: none;}
+.boxNav{
+	background: #2A2D3F;
+	width: 100%;
+	height: 30vh;
+	position: absolute;
+	z-index: 899;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	color: #E5E6E8;
+	border-bottom: 1px solid rgba(0,0,0, .25)
+}
+
+.boxNav ul li{
+	margin: 1.9vh 0;
+	list-style: none;
+	font-size: 14pt;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+}
+.boxNav ul li:hover{
+	text-decoration: underline;
+	color: currentColor;
+	cursor: pointer;
+}
+.containerNav{display: none;}
 .containerBody .sobreMim{
 	display: flex;
 	color: #FFF;
@@ -30,7 +90,7 @@ body{background: #2A2D3F;}
 	font-weight: 200;
 	margin: 0 0 3.5%;
 }
-.containerBody .sobreMim a img{
+.containerBody .sobreMim a img{	visibility: hidden;
 	width: 125px;
 	height: 125px;
 	border-radius: 50%;
@@ -49,6 +109,7 @@ body{background: #2A2D3F;}
 	justify-content: center;
 	align-items: flex-end;
 	margin: 0 0 1.5%;
+	filter: drop-shadow(4px 4px 5px rgba(0,0,0, .25));
 }
 .containerBody .containerProjetos .brWallet{
 	display: flex;
@@ -81,16 +142,32 @@ body{background: #2A2D3F;}
 	color: #E5E6E8;
 	font-size: 11pt;
 }
-.embbed{
+
+.containerServicos h2{
+	font-size: 20pt;
+	color: #E5E6E8;
+	margin: 2% 0 0 0;
 	text-align: center;
-	cursor: pointer;
 }
+.containerServicos .servicos{
+	font-size: 75pt;	
+	display: flex;
+	justify-content: center;
+	margin: 2.5%;
+}
+.containerServicos .servicos .tech{
+	margin: 0 2.5% 0;
+}
+.html5{color: #DD4B25;}
+.css3{color: #254BDD;}
+.js{color: #EFD81D;}
 footer{
 	width: 100%;
 	background: #262939;
 	position: absolute;
 	height: 15vh;
-	bottom: 0;
+	bottom: -35vh!important;
+	z-index: 551;
 }
 .containerFooter{
 	display: flex;
@@ -119,6 +196,9 @@ footer::after{
 }
 @media (max-width: 920px){
 	body{overflow-x: hidden; margin: 0;}
+	header .mobileNav .hamburguer p{
+		display: flex;
+	}
 	.containerBody .sobreMim{
 		display: flex;
 		color: #FFF;
@@ -199,7 +279,7 @@ footer::after{
 		background: #262939;
 		position: absolute;
 		height: 15vh;
-		bottom: -15%;
+		bottom: -22%;
 	}
 	.containerFooter{
 		display: flex;
@@ -231,5 +311,23 @@ body::-webkit-scrollbar{
 	width: 0px;
 	height: 0px;
 	background: #333;
+}
 
+.containerCertificados h2{
+	text-decoration: none;
+	margin: 1.9vh 0 0;
+	text-align: center;
+	font-size: 16pt;
+	color: #E5E6E8;
+	font-family: 'Open Sans', sans-serif;
+}
+.containerCertificados .certificados{
+	display: grid;
+	place-itens: center;
+}
+.containerCertificados .certificados .c1{
+	width: 250px;
+	height: 100px;
+	background: #333;
+	margin: 1%;
 }
